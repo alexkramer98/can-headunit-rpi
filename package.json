@@ -1,0 +1,13 @@
+{
+  "name": "can-headunit-rpi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexkramer98/can-headunit-rpi.git",
+  "author": "alex",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "node-key-sender": "^1.0.11",
+    "serialport": "^9.0.4"
+  }
+}
