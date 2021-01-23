@@ -32,7 +32,6 @@ let pressKeysDebounced = _.debounce(keys => {
     } else {
         KeySender.sendKey(keys);
     }
-    console.log(keys);
 }, 150, {
     leading: true,
     trailing: false,
@@ -93,7 +92,7 @@ function handleSerialInput(entity, state) {
             case 'mute':
                 pressKeysDebounced(['control', 'f11']);
                 break;
-            case 'talk':
+            case 'voice':
                 pressKeysDebounced('m');
                 break;
             case 'up':
@@ -102,13 +101,13 @@ function handleSerialInput(entity, state) {
             case 'down':
                 pressKeysDebounced('1');
                 break;
-            case 'previous':
+            case 'previousTrack':
                 pressKeysDebounced('v');
                 break;
-            case 'next':
+            case 'nextTrack':
                 pressKeysDebounced('n');
                 break;
-            case 'src':
+            case 'source':
                 handleMultiButton('enter', 'f');
         }
     } else {
